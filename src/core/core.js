@@ -1173,4 +1173,6 @@ Gantt.envReady = function() {
   return Promise.resolve(true);
 };
 
-
+if (module.hot) {
+  module.hot.accept();
+}
